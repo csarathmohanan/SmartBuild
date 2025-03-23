@@ -1,0 +1,10 @@
+Material,U_min,U_max,R_min,R_max,TM_min,TM_max,A_min,A_max
+Bamboo,1.5,2.2,0.454545455,0.666666667,0.5,1.2,0.4,0.7
+Reclaimed Wood,1.5,2.5,0.4,0.666666667,0.5,1.2,0.4,0.7
+FSC Certified Wood,1,1.8,0.555555556,1,0.5,1.2,0.4,0.7
+Aluminum (Recycled),2,3,0.333333333,0.5,0.1,0.5,0.2,0.5
+Thermally Broken Aluminum,1.5,2.5,0.4,0.666666667,0.4,1,0.2,0.5
+Fiberglass,1.2,1.8,0.555555556,0.833333333,0.5,1.5,0.2,0.8
+UPVC (Unplasticized PVC),1,2,0.5,1,0.5,1.5,0.2,0.8
+Steel (Recycled),5,6,0.166666667,0.2,0.5,1.5,0.2,0.8
+Wood-Plastic Composite,1.5,2.5,0.4,0.666666667,0.5,1.5,0.2,0.8

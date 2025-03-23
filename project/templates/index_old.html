@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Input Form</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 300px;
+            margin: auto;
+        }
+        label, input, button, div {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .menu a:hover {
+            background-color: #575757;
+        }
+    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="index" class="selected">Orientation</a>
+        <a href="foundation">Foundation</a>
+    </div>
+    <div class="container">
+        <h2>Orientation</h2>
+        <form id="locationForm" action = '/index' method="POST" class="form"  enctype="multipart/form-data">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" value="{{location}}" placeholder="Enter a location" required>
+
+            <button type="submit">Submit</button>
+
+            <div>
+                <b><label>Optimal Building Orientation:</label></b>
+                <span id="output1">{{out1}}</span>
+            </div>
+            <div>
+                <b><label>Opening side:</label></b>
+                <span id="output2">{{out2}}</span>
+            </div>
+            <div>
+                <b><label>Best Material:</label></b>
+                <span id="output2"><ul type="none">{% for mat in material %}
+                                        <li>{{mat}}</li>
+                                   {% endfor %}</ul></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- <script>
+        document.getElementById('locationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get the location input value
+            const location = document.getElementById('location').value;
+
+            // Update output fields
+            document.getElementById('output1').textContent = `You entered: ${location}`;
+            document.getElementById('output2').textContent = `Location length: ${location.length}`;
+        });
+    </script> -->
+</body>
+</html>
